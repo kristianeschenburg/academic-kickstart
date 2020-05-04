@@ -25,13 +25,15 @@ publication_types: ["2"]
 publication: ""
 publication_short: ""
 
-abstract: ""
+abstract: "We present a framework for registering cortical surfaces based on tractography-informed structural connectivity. We define connectivity as a continuous kernel on the product space of the cortex, and develop a method for estimating this kernel from tractography fiber models. Next, we formulate the kernel registration problem, and present a means to non-linearly register two brains' continuous connectivity profiles. We apply theoretical results from operator theory to develop an algorithm for decomposing the connectome into its shared and individual components. Lastly, we extend two discrete connectivity measures to the continuous case, and apply our framework to 98 Alzheimer's patients and controls. Our measures show significant differences between the two groups."
 
 # Summary. An optional shortened abstract.
 summary: We present a framework for registering cortical surfaces based on tractography-informed structural connectivity. We define connectivity as a continuous kernel on the product space of the cortex, and develop a method for estimating this kernel from tractography fiber models.
 
 tags:
-- Source Themes
+- continuous connectomics
+- alzheimers
+- surface registration
 featured: true
 
 links:
@@ -68,14 +70,3 @@ image:
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
-
-{{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management # software.
-{{% /alert %}}
-
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
-
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
-

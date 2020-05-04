@@ -28,13 +28,16 @@ publication_types: ["2"]
 publication: "Personality and Individual Differences"
 publication_short: ""
 
-abstract: ""
+abstract: "Here white matter fibers connecting several brain regions were obtained with deterministic and probabilistic tractography in a sample of 104 healthy young adults. The properties of the computed connectivity matrices were studied from two distinguishable perspectives. The first was based on global and nodal standard graph theory metrics, whereas the second relied on exploratory factor analysis (EFA) for selecting potentially relevant sub-networks. A broad set of cognitive constructs was considered: general (g), fluid, crystallized, and spatial intelligence, working memory capacity, attention, and processing speed. The findings show that graph metrics change depending on the applied tractography, and only the probabilistic method yielded factorable connectivity matrices. Secondly, EFA reveals structural networks underlying variability in intelligence factors and cognitive processes. Thirdly, variability in g and Gf was predicted by functional integration–segregation and predominant long-distance structural connections in the brain, playing a key role the left inferior parietal and prefrontal areas."
 
 # Summary. An optional shortened abstract.
 summary: Here, we show that Exploratory Factor Analysis (EFA) reveals structural connectivity subnetworks related to a broad range of cognitive constructs, including general, fluid, crystallized, and spatial intelligence, along with working memory capacity, attention, and processing speed.
 
 tags:
-- Source Themes
+- exploratory factor analysis
+- intelligence
+- structural brain connectivity
+- diffusion MRI
 featured: true
 
 links:
@@ -71,14 +74,3 @@ image:
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
-
-{{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management # software.
-{{% /alert %}}
-
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
-
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
-

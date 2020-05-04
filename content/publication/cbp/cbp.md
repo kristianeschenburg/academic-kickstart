@@ -20,13 +20,16 @@ publication_types: ["1"]
 publication: ""
 publication_short: ""
 
-abstract: ""
+abstract: "An important goal in neuroscience has been to map the surface of the human brain, and many researchers have developed sophisticated methods to parcellate the cortex. However, many of these methods stop short of developing a framework to apply existing cortical maps to new subjects in a consistent fashion. The computationally complex step is often the initial mapping of a large set of brains, and it is inefficient to repeat these processes for every new data sample. In this analysis, we propose the use of a library of training brains to build a statistical model of the parcellated cortical surface and to act as templates for mapping new data. We train classifiers on training data sampled from local neighborhoods on the cortical surface, using features derived from training brain connectivity information, and apply these classifiers to map the surfaces of previously unseen brains. We demonstrate the performance of 3 different classifiers, each trained on 3 different types of training features, to accurately predict the map of new brain surfaces."
 
 # Summary. An optional shortened abstract.
 summary: In this analysis, we propose the use of a library of training brains to build a statistical model of the parcellated cortical surface to act as templates for mapping new MRI data.
 
 tags:
-- Source Themes
+- clustering
+- deep learning
+- segmentation
+- Human Connectome Project
 featured: true
 
 links:
@@ -63,14 +66,3 @@ image:
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
-
-{{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management # software.
-{{% /alert %}}
-
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
-
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
-

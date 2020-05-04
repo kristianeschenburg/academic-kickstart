@@ -27,13 +27,16 @@ publication_types: ["2"]
 publication: "International Symposium on Biomedical Imaging"
 publication_short: ""
 
-abstract: ""
+abstract: "Hemispherectomy is a surgical procedure for severe cases of epilepsy where an entire brain hemisphere is resected. Many patients maintain relatively normal cognitive function. Understanding how the brain's connections are organized in such cases is of interest and has not yet been explored. Using diffusion tensor imaging, we analyzed structural brain networks using various topological measures derived from brain connectivity matrices, to understand neural architecture in children with one brain hemisphere. We examined two measures derived from graph theory, global efficiency and modularity, using a k-core decomposition algorithm to compare two tractography methods and found distinctions in overall brain connectivity when comparing the two methods. While a normal control group was not available for direct comparison, this pilot study shows that it is feasible to study cortical connectivity in hemispherectomy patients."
 
 # Summary. An optional shortened abstract.
 summary: Using diffusion tensor imaging, we analyzed structural brain networks using various topological measures derived from brain connectivity matrices, to understand neural architecture in children with one brain hemisphere.
 
 tags:
-- Source Themes
+- hemispherectomy
+- diffusion MRI
+- graph theory
+- epilepsy
 featured: true
 
 links:
@@ -70,14 +73,3 @@ projects:
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
-
-{{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management # software.
-{{% /alert %}}
-
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
-
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
-
