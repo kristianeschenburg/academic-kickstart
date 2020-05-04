@@ -3,7 +3,7 @@
 widget = "featurette"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 40  # Order that this section will appear.
+weight = 39  # Order that this section will appear.
 
 title = "Languages"
 subtitle = ""
@@ -47,9 +47,9 @@ subtitle = ""
   description = "5 Years: I most often use R for applying more advanced statistical techniques."
 
 [[feature]]
-  icon = "java"
-  icon_pack = "fab"
-  name = "Java"
-  description = "3 Years"
+  icon = "keyboard"
+  icon_pack = "fas"
+  name = "Java and C++"
+  description = "3 Years: Used primarily when I need to modify pre-existing code."
 
 +++

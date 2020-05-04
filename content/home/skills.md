@@ -38,19 +38,19 @@ subtitle = ""
   icon = "project-diagram"
   icon_pack = "fas"
   name = "Scientific Computing"
-  description = "10 years of experience formulating and solving algorithmic problems in brain imaging."  
+  description = "10 Years: Formulating, implementing, and solving algorithmic problems in MRI image processing."  
   
-[[feature]]
-  icon = "border-all"
-  icon_pack = "fas"
-  name = "Linear Algebra"
-  description = "40%"
-
-
 [[feature]]
   icon = "brain"
   icon_pack = "fas"
-  name = "Machine Learning"
-  description = "6 years of experience implementing solutions "
+  name = "Statistics"
+  description = "8 Years: Developing / applying statistical tests and modeling techiniques to noisy, heterogeneous, high-dimensional data."
+
+
+[[feature]]
+  icon = "border-all"
+  icon_pack = "fas"
+  name = "Software Engineering"
+  description = "6 Years: Passionate about open-source development and object-oriented design."
 
 +++
