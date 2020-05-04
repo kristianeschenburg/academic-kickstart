@@ -35,6 +35,24 @@ subtitle = ""
   text_color_light = false  
 
 [[feature]]
+  icon = "python"
+  icon_pack = "fab"
+  name = "Python"
+  description = "8 Years: I do most of my scientific computing development in Python."
+
+[[feature]]
+  icon = "r-project"
+  icon_pack = "fab"
+  name = "R"
+  description = "5 Years: I most often use R for applying more advanced statistical techniques."
+
+[[feature]]
+  icon = "keyboard"
+  icon_pack = "fas"
+  name = "Java and C++"
+  description = "3 Years: Used primarily when I need to modify pre-existing code."
+
+[[feature]]
   icon = "project-diagram"
   icon_pack = "fas"
   name = "Scientific Computing"
