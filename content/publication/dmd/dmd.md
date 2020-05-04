@@ -33,7 +33,7 @@ tags:
 - modal decomposition
 - fMRI
 - independent component analysis
-- Human Connectopy Project
+- Human Connectome Project
 featured: true
 
 links:
