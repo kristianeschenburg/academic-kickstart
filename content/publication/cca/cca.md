@@ -32,7 +32,7 @@ summary: We present a framework for registering cortical surfaces based on tract
 
 tags:
 - continuous connectomics
-- alzheimers
+- Alzheimers
 - surface registration
 featured: true
 
