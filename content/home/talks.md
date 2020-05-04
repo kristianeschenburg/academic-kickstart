@@ -2,12 +2,12 @@
 # A Recent and Upcoming Talks section created with the Pages widget.
 # This section displays recent talks from `content/talk/`.
 
-widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 70  # Order that this section will appear.
 
-title = "Recent & Upcoming Talks"
+title = "Talks and Presentations"
 subtitle = ""
 
 [content]
@@ -55,7 +55,7 @@ subtitle = ""
   # gradient_end = "SkyBlue"
   
   # Background image.
-  # image = "background.jpg"  # Name of image in `static/img/`.
+  # image = "summit.jpg"  # Name of image in `static/img/`.
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
@@ -67,4 +67,32 @@ subtitle = ""
  
  # CSS class.
  css_class = ""
+
+ [[item]]
+  organization = "Northwest Data Science Summit"
+  organization_url = "https://escience.washington.edu/northwest-data-science-summit/"
+  title = "(*Best Talk, Honorable Mentions*) Automated Connectivity-Based Parcellation With Registration-Constrained Classification"
+  url = ""
+  certificate_url = ""
+  date_start = "2019-03-08"
+  date_end = ""
+
+[[item]]
+  organization = "UW Radiology Day"
+  organization_url = "https://rad.washington.edu/research-day-2019/"
+  title = "Automated Connectivity-Based Parcellation With Registration-Constrained Classification"
+  url = ""
+  certificate_url = ""
+  date_start = "2019-03-30"
+  date_end = ""
+
+[[item]]
+  organization = "Society for Industrial and Applied Mathematics (SIAM)"
+  organization_url = "https://archive.siam.org/meetings/cse17/"
+  title = "Analyzing the Resting Brain with Dynamic Mode Decomposition"
+  url = ""
+  certificate_url = ""
+  date_start = "2017-02-27"
+  date_end = ""
+
 +++

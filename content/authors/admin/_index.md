@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Nelson Bighetti
+name: Kristian M. Eschenburg
 
 # Username (this should match the folder name)
 authors:
@@ -10,32 +10,28 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: PhD Student, Biomedical Engineering
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: University of Washington
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: ""
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Cortical spatial gradients
+- Connectivity network analyses
+- Unsupervised cortical mapping
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
+  - course: PhD in Biomedical Engineering
+    institution: University of Washington
+  - course: BSc in Molecular and Cellular Biology
+    institution: University of California, Los Angeles
     year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -44,16 +40,16 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:keschenb@uw.edu'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/keschh
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/kristianeschenburg
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/kristianeschenburg/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -61,15 +57,15 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+# email: ""
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-- Researchers
-- Visitors
+# user_groups:
+# - Researchers
+# - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I'm a Biomedical Engineering Ph.D. student at the University of Washington in the [Integrated Brain Imaging Center](http://ibic.washington.edu/#&panel1-1).  Using techniques from statistics, graph theory, optimization, and machine learning, I'm developing methods to help explore the relationship between brain structure and function.  I'm driven by curiosity and fueled by coffee.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Beyond neuroscience, I'm broadly interested in open-science, open-source  development, and improving public scientific understanding.  In my spare time, I like to ski up (and down) hill, mountaineer, trail run, and tend to my tomato garden.
