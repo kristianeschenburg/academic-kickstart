@@ -46,23 +46,4 @@ date_format = "Jan 2006"
   * Analyzed dynamical systems of functional MRI to characterize coherent spatial patterns of brain activity
   * Translated summer-internship research into [journal paper](https://www.frontiersin.org/articles/10.3389/fncom.2019.00075/full)
   """
-
-  [[experience]]
-  title = "PhD Graduate Student, University of Washington"
-  company = "Integrated Brain Imaging Center"
-  company_url = "http://ibic.washington.edu/#&panel1-1"
-  location = "Seatte, WA"
-  date_start = "2014-09-20"
-  date_end = ""
-  description = """
-
-  Research projects include:
-  
-  * Segmenting the human neo-cortex based on brain connectivity patterns using parametric and non-parametric clustering approaches
-  * Characterizing topographic organization of neuron projection patterns using multivariate spatial modeling methods
-  * Studying functional brain network dynamics using modal decomposition algorithms
-  * Developing deep-learning approaches to characterize and remove motion artefacts in structural MRI images
-  """
-
-
 +++
