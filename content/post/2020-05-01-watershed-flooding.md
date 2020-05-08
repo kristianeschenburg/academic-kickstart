@@ -1,5 +1,5 @@
 ---
-title: "Watershed by Flooding: Applied Data Structures in Python"
+title: "Watershed by Flooding: Applied Data Structures"
 layout: post
 date: 2020-05-01 11:12:32
 math: true
