@@ -12,7 +12,7 @@ I'm applying some methods developed in [this paper](https://www.ncbi.nlm.nih.gov
 ### Computing the Gradient Map
 The authors use some conventional brain imaging software to compute the gradient of their data.  The domain of this data is a triangulated mesh, described by the graph $G = \\{V, E\\}$, where $V$ are vertices in Euclidean space and $E$ the edges between these vertices.  In short, for a vertex, $v\_{i}$, we first need to compute the gradient vector of the scalar field at $v\_{i}$.  We "unfold" the 3D positions of adjacent vertices onto the tangent plane of $v\_{i}$ -- which we can do by orthogonally projecting the adjacent vertices onto the affine subspace at $v\_{i}$ and then weighting appropriately.  We then regress the graph signal (our scalar field) onto these unfolded positions.  The $L_{2}$ norm of this vector is the gradient at $v\_{i}$.
 
-For each vertex, we have a normal vector to the surface $N$, its spatial 3D coordinates $v_{i} = (x, y, z)$, and a list of its adjacent vertices.  We can compute the orthogonal projector onto affine subspace spanned by $N$, $P_{N}$, and it's orthonglal complement, $Q_{N}$, as:
+For each vertex, we have a normal vector to the surface $N$, its spatial 3D coordinates $v_{i} = (x, y, z)$, and a list of its adjacent vertices.  We can compute the orthogonal projector onto affine subspace spanned by $N$, $P_{N}$, and it's orthogonal complement, $Q_{N}$, as:
 
 $$\begin{align}
 P_{N} &= N(N^{T}N)^{-1}N^{T} \\\\
