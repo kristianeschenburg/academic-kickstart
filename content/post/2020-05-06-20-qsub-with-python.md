@@ -1,12 +1,12 @@
 ---
-title:  "qsub and Python Scripts"
+title:  "Submitting Batch Jobs With qsub"
 layout: post
 math: true
 date:   2020-05-05 14:24:17 -0700
 mathjax: true
 ---
 
-I'm fortunate enought to work in a lab with some high-level computing infrastructure.  We have a clusters of machines using the [Sun Grid Engine](http://bioinformatics.mdc-berlin.de/intro2UnixandSGE/sun_grid_engine_for_beginners/README.html) (SGE) cluster software system.  The other day I found myself, searching for how to wrap my Python scripts so that I can use ```qsub``` to submit a batch of jobs to our cluster.  Eventually, I want to be able to submit jobs with dependencies between them, but we'll start here.  
+I'm fortunate enought to work in a lab with some high-level computing infrastructure.  We have a cluster of machines using the [Sun Grid Engine](http://bioinformatics.mdc-berlin.de/intro2UnixandSGE/sun_grid_engine_for_beginners/README.html) (SGE) software system for distributed resource management.  The other day, I was searching for how to wrap my Python scripts with ```qsub``` so that I could submit a batch of jobs to our cluster.  Eventually, I want to be able to submit jobs with dependencies between them, but we'll start here.  
 
 Let's create an example script that computes the mean of an MRI image.  Let's call the script ```compute_mean.py```:
 
@@ -83,3 +83,9 @@ do
 
 done <${subjects}
 ```
+
+Here's an example output from running ```qstat``` after submitting a batch of jobs to the cluster:
+
+{{< figure library="true" src="qsub.png" title="Example of qstat command, after submitting jobs view qsub." lightbox="true" >}}
+
+One thing you'll notice is the column ```priority``` -- this is literally a ```priority queue``` data structure that I mentioned in my last post on the Watershed by Flooding algorithm.  Each job is submitted to the queue with a priority value assigned to it by the SGE software, and the jobs are processed in that order -- highest priority first, lowest priority last.  Your IT manager can personalize the priority values for specific users or types of jobs, such that they are given preference or moved back in line.  This represents an equitable way of distributing compute resources across users in a lab, generally using a first-come, first-serve basis, or restricting users to a certain number of nodes.
