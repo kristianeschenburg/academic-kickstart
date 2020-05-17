@@ -10,7 +10,7 @@ pagination:
 I'm applying some methods developed in [this paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4677978/pdf/bhu239.pdf) for testing purposes in my own thesis research.  Specifically, I have some float-valued data, $F$, that varies along the cortical surface of the brain.  Visually, I can see that there are areas where these scalar maps change abruplty.  I want to identify this boundary(s) -- eventually, I'll segment out the regions I'm interested in.
 
 ### Computing the Gradient Map
-The authors use some conventional brain imaging software to compute the gradient of their data.  The domain of this data is a triangulated mesh, described by the graph $G = \\{V, E\\}$, where $V$ are vertices in Euclidean space and $E$ the edges between these vertices.  In short, for a vertex, $v\_{i}$, we first need to compute the gradient vector of the scalar field at $v\_{i}$.  We "unfold" the 3D positions of adjacent vertices onto the tangent plane of $v\_{i}$ -- which we can do by orthogonally projecting the adjacent vertices onto the affine subspace at $v\_{i}$ and then weighting appropriately.  We then regress the graph signal (our scalar field) onto these unfolded positions.  The $L_{2}$ norm of this vector is the gradient at $v\_{i}$.
+The authors use some conventional brain imaging software to compute the gradient of their data.  The domain of this data is a triangulated mesh, described by the graph $G = (V, E)$, where $V$ are vertices in Euclidean space and $E$ the edges between these vertices.  In short, for a vertex, $v\_{i}$, we first need to compute the gradient vector of the scalar field at $v\_{i}$.  We "unfold" the 3D positions of adjacent vertices onto the tangent plane of $v\_{i}$ -- which we can do by orthogonally projecting the adjacent vertices onto the affine subspace at $v\_{i}$ and then weighting appropriately.  We then regress the graph signal (our scalar field) onto these unfolded positions.  The $L_{2}$ norm of this vector is the gradient at $v\_{i}$.
 
 For each vertex, we have a normal vector to the surface $N$, its spatial 3D coordinates $v_{i} = (x, y, z)$, and a list of its adjacent vertices.  We can compute the orthogonal projector onto affine subspace spanned by $N$, $P_{N}$, and it's orthogonal complement, $Q_{N}$, as:
 
@@ -27,18 +27,31 @@ q(v_{j}) = Q_{N}(v_{j} - v_{i}) + v_{i}
 
 We generate the vectors 
 
+$$
+S_{i} = f(i) - 
+\begin{bmatrix}
+f(v_{1}) \\\\
+f(v_{2}) \\\\
+\vdots \\\\
+f(v_{j})
+\end{bmatrix}
+\in \mathbb{R}^{j} \\;\\;\\;
+R_{i} = 
+\begin{bmatrix}
+q(v_{1}) \\\\
+q(v_{2}) \\\\
+\vdots \\\\
+q(v_{j})
+\end{bmatrix} \in \mathbb{R}^{j \times 3}
+$$
+
+where $S_{i}$ is the difference between the scalar value at our vertex $f(v_{i})$ and the vector of adjacent $j$ scalar field values, and $R_{i}$ is the matrix of $j$ orthogonally projected adjacent vertex coordinates.  Then we perform least squares regression to solve for $\beta$:
+
 $$\begin{align}
-S_{i} &= [f_{1}, f_{2},\\;...\\;f{j}] \in \mathbb{R}^{j} \\\\
-R_{i} &= [q(v_{1}), q(v_{2}),\\;...\\;q(v_{j}))] \in \mathbb{R}^{j \times 3}
+S_{i} = R_{i}\\beta 
 \end{align}$$
 
-the vector of adjacent $j$ scalar field values, and the matrix of $j$ orthogonally projected adjacent vertex coordinates.  Then we perform least squares regression to solve for $\beta$:
-
-$$\begin{align}
-S{i} = R_{i}\\beta 
-\end{align}$$
-
-where $\beta \in \mathbb{R}^{3}$ and the gradient value at vertex $v_{i} = \left || \beta \right||_{2}$.
+where $\beta \in \mathbb{R}^{3}$, which indicates how much each coordinate axis contributes to variation in the scalar field at $v_{i}$.  The gradient value at vertex $v_{i} = \left || \beta \right||_{2}$.
 
 ### Watershed By Flooding Algorithm
 
