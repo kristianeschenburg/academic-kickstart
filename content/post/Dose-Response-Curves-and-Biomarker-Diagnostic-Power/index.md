@@ -1,10 +1,31 @@
 ---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
 title: "Dose-Response Curves and Biomarker Diagnostic Power"
-layout: post
-date: 2019-08-27 11:12:32
-math: true
-pagination: 
-    enabled: true
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2019-08-27T11:12:32-07:00
+lastmod: 2019-08-28T11:12:32-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
 
 The other day, one of my friends and colleagues (I'll refer to him as "Dr. A") asked me if I knew anything about assessing biomarker diagnostic power.  He went on to describe his clinical problem, which I'll try to recant here (but will likely mess up some of the relevant detail -- his research pertains to generating induced pluripotent cardiac stem cells, which I have little to no experience with):

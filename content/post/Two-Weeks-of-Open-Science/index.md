@@ -1,10 +1,31 @@
 ---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
 title: "Two Weeks of Open Science: A Rekindled Flame"
-layout: post
-date: 2018-08-17 01:12:33
-math: true
-pagination: 
-    enabled: true
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2018-08-17T01:12:33-07:00
+date: 2018-08-18T01:12:33-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
 
 I recently attended [Neurohackademy 2018](http://neurohackademy.org/), hosted by the University of Washington's [eScience Institute](https://escience.washington.edu/), and organized by Dr. Ariel Rokem and Dr. Tal Yarkoni.
@@ -40,3 +61,4 @@ Here are a few things things I learned, that I'm going to incorporate into my ow
 This event was what I'd hoped graduate school would be like all along.  While idealistic and naiive to some degree, I still think it can be.  The open-source model is shifting how research is performed -- the act of doing research is evolving in such a way that it is no longer tethered to specific institutions or labs, and given tools like Docker and AWS, you can almost perfectly recreate specific computing environments needed to perform the work.  With the rise of open-source datasets, especially due to researchers willingly distributing their data and code, collaborative environments like that fostered by Neurohackademy (even if digital), and the ability to replicate workflows, results, and analyses, are becoming more and more feasible.  It only takes a few proponents of the open-source model to give the idea momentum.
 
 If this is the future, the future is looking good.
+

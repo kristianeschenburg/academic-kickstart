@@ -1,9 +1,31 @@
 ---
-title:  "Blockwise Matrix Inversions"
-layout: post
-math: true
-date:   2018-05-08 23:24:17 -0700
-mathjax: true
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "Blockwise Matrix Inversion"
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date:   2018-05-08T23:24:17-07:00
+lastmod: 2018-06-08T23:24:17-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
 
 I'm taking a Statistics course on the theory of linear models, which covers Gauss-Markov models and various extensions of them.  Sometimes, when dealing with partitioned matrices, and commonly Multivariate Normal Distributions, we'll often need to invert matrices in a blockwise manner.  This has happened often enough during this course (coincidentally was necessary knowledge for a midterm question), so I figured I should just document some of the inversion lemmas.

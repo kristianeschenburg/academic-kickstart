@@ -1,10 +1,31 @@
 ---
-title: "Mahalanobis Distance: A Distributional Exploration of Brain Connectivity"
-layout: post
-date: 2018-12-07 05:12:32
-math: true
-pagination: 
-    enabled: true
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "Mahalanobis Distances of Brain Connectivity"
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2018-12-07T05:12:32-07:00
+lastmod: 2018-12-08T05:12:32-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
 
 For one of the projects I'm working on, I have an array of multivariate data relating to brain connectivity patterns.  Briefly, each brain is represented as a surface mesh, which we represent as a graph $G = (V,E)$, where $V$ is a set of $n$ vertices, and $E$ are the set of edges between vertices.

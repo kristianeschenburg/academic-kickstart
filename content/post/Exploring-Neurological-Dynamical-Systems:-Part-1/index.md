@@ -1,12 +1,33 @@
 ---
-title: "Exploring Dynamical Systems With DMD: Part 1"
-layout: post
-date: 2018-05-22 14:02:52
-math: true
-mathjax: true
-pagination: 
-    enabled: true
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "Exploring Neurological Dynamical Systems: Part 1"
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2018-05-22T14:02:52-07:00
+lastmod: 2018-05-23T14:02:52-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
+
 
 In the next two posts, I want to talk briefly about an algorithm called Dynamic Mode Decomposition (DMD).  DMD is a spatiotemporal modal decomposition technique that can be used to identify spatial patterns in a signal (modes), along with the time course of these spatial patterns (dynamics).  As such, the algorithm assumes that the input data has a both a spatial and a temporal component.  We are interested in modeling *how* the system evolves over time.  
 

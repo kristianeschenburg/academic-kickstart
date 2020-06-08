@@ -1,12 +1,33 @@
 ---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
 title: "Multivariate Normal Distribution"
-layout: post
-date: 2018-05-12 03:14:14
-math: true
-mathjax: true
-pagination: 
-    enabled: true
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2018-05-12T03:14:14-07:00
+lastmod: 2018-05-13T13:29:22-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
+
 
 In this post, I'll be covering the basics of Multivariate Normal Distributions, with special emphasis on deriving the conditional and marginal distributions.
 

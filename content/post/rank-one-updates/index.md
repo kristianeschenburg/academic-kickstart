@@ -1,9 +1,31 @@
 ---
-title: "Rank-One Updates"
-layout: post
-math: true
-date: 2018-05-11 16:53:45
-mathjax: true
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "Rank One Updates"
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2018-05-11T16:53:45-07:00
+lastmod: 2018-05-12T16:53:45-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
 
 In this post, I'm going to go over some examples of rank-one updates of matrices.  To compute rank-one updates, we rely on the Sherman-Morrison-Woodbury theorem.  From the previous post on [Blockwise Matrix Inversion]({% post_url 2018-05-08-blockwise-matrix-inversion %}), recall that, given a matrix and its inverse

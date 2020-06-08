@@ -1,11 +1,33 @@
 ---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
 title: "Watershed by Flooding: Applied Data Structures"
-layout: post
-date: 2020-05-01 11:12:32
-math: true
-pagination: 
-    enabled: true
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2020-05-01T11:12:32-07:00
+lastmod: 2020-05-02T11:12:32-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
+
 
 I'm applying some methods developed in [this paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4677978/pdf/bhu239.pdf) for testing purposes in my own thesis research.  Specifically, I have some float-valued data, $F$, that varies along the cortical surface of the brain.  Visually, I can see that there are areas where these scalar maps change abruplty.  I want to identify this boundary(s) -- eventually, I'll segment out the regions I'm interested in.
 

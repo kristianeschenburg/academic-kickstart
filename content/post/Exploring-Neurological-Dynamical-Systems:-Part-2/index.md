@@ -1,11 +1,31 @@
 ---
-title: "Exploring Dynamical Systems With DMD: Part 2"
-layout: post
-date: 2018-05-24 11:30:43
-math: true
-mathjax: true
-pagination: 
-    enabled: true
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "Exploring Neurological Dynamical Systems: Part 2"
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2018-05-24T11:30:43-07:00
+lastmod: 2018-05-25T11:30:43-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
 
 In my previous post on [Dynamic Mode Decomposition]({% post_url 2018-05-24-dynamic-mode-decomposition-part-1 %}), I discussed the foundations of DMD as a means for linearizing a dynamical system.  In this post, I want to look at a way in which we can use rank-updates to incorporate new information into the spectral decomposition of our linear operator, $A$, in the event that we are generating online measurements from our dynamical system.  If you want a more-detailed overview of this topic, {% cite zhang_dmd --file dmd %} developed the theory, along with open source code, for testing this method.
@@ -75,3 +95,4 @@ Y_{m+1} X_{m+1}^{T} &= YX^{T} + y_{m+1}x_{m+1}^{T} \\\\
 \end{align}$$
 
 which is simply the sum of our original matrix $Q$, plus a rank-one matrix.  {% cite zhang_dmd --file dmd %} go on to describe some pretty cool "local" DMD schemes, by incorporating weights, as well as binary thresholds, that are time-dependent into the computation of the linear operator, $A$.
+

@@ -1,9 +1,31 @@
 ---
-title:  "Submitting Batch Jobs With qsub"
-layout: post
-math: true
-date:   2020-05-05 14:24:17 -0700
-mathjax: true
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "Submitting Batch Jobs with qsub"
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2020-05-05T14:24:17-07:00
+lastmod: 2020-05-06T14:24:17-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
 
 I'm fortunate enought to work in a lab with some high-level computing infrastructure.  We have a cluster of machines using the [Sun Grid Engine](http://bioinformatics.mdc-berlin.de/intro2UnixandSGE/sun_grid_engine_for_beginners/README.html) (SGE) software system for distributed resource management.  The other day, I was searching for how to wrap my Python scripts with ```qsub``` so that I could submit a batch of jobs to our cluster.  Eventually, I want to be able to submit jobs with dependencies between them, but we'll start here.  

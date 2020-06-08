@@ -1,10 +1,31 @@
 ---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
 title: "The Delta Method"
-layout: post
-date: 2019-03-19 12:43:32
-math: true
-pagination: 
-    enabled: true
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2019-03-19T12:43:32-07:00
+lastmod: 2019-03-20T12:43:32-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
 
 Here, we'll look at various applications of the [Delta Method](https://en.wikipedia.org/wiki/Delta_method), especially in the context of variance stabilizing transformations, along with looking at the confidence intervals of estimates.
@@ -384,3 +405,4 @@ plt.tight_layout()
 ```
 
 {{< figure library="true" src="bank_notes_CI.jpg" title="Confidence intervals for each feature, computed using Delta Method." lightbox="true" >}}
+

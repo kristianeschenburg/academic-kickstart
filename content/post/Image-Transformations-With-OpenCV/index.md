@@ -1,10 +1,31 @@
 ---
-title: "Image Transformations using OpenCV: A Primer"
-layout: post
-date: 2018-09-01 17:12:32
-math: true
-pagination: 
-    enabled: true
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "Image Transformations With OpenCV"
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2018-09-01T17:12:32-07:00
+lastmod: 2018-09-02T17:12:32-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
 
 I've been toying around with [openCV](https://opencv.org/) for generating MRI images with synethetic motion injected into them.  I'd never used this library before, so I tested a couple examples.  Below I detail a few tools that I found interesting, and that can quickly be used to generate image transformations.

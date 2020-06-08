@@ -1,10 +1,31 @@
 ---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
 title: "Enabling Custom Jekyll Plugins with TravisCI"
-layout: post
-date: 2018-08-12 02:14:14
-math: true
-pagination: 
-    enabled: true
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2018-08-12T02:14:14-07:00
+lastmod: 2018-08-13T02:14:14-07:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
 
 I just learned about [TravisCI](https://travis-ci.org/) (actually, about continuous integration (CI) in general) after attending [Neurohackademy 2018](http://neurohackademy.org/).  We learned about CI from the perspective of ensuring that your code builds properly when you update files in your packages, incorporate new methods, refactor your code, etc.  Pretty neat.
