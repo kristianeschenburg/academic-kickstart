@@ -109,8 +109,8 @@ for i in np.arange(iterations):
 
 Let's have a look at the sample means and variances as a function of the sample size.  Empirically, we see that both the sample mean and variance estimates converge to their population parameters, 0 and 1.
 
-{{< figure library="true" src="WLLN_Mean.jpg" title="Sample mean estimates as a function of sample size." lightbox="true" >}}
-{{< figure library="true" src="WLLN_Variance.jpg" title="Sample variance estimates as a function of sample size." lightbox="true" >}}
+{{< figure src="WLLN_Mean.jpg" title="Sample mean estimates as a function of sample size." lightbox="true" >}}
+{{< figure src="WLLN_Variance.jpg" title="Sample variance estimates as a function of sample size." lightbox="true" >}}
 
 Below is a simple method to compute the empirical probability that an estimate exceeds the epsilon threshold.
 
@@ -148,8 +148,8 @@ for E in e:
     vrs_probs.append(1-ecdf(vsrs, pparam=1, epsilon=E))
 ```
 
-{{< figure library="true" src="ECDF_Mean.jpg" title="Empirical probability that mean estimate exceeds population mean by epsilon." lightbox="true" >}}
-{{< figure library="true" src="ECDF_Variance.jpg" title="Empirical probability that variance estimate exceeds population variance by epsilon." lightbox="true" >}}
+{{< figure src="ECDF_Mean.jpg" title="Empirical probability that mean estimate exceeds population mean by epsilon." lightbox="true" >}}
+{{< figure src="ECDF_Variance.jpg" title="Empirical probability that variance estimate exceeds population variance by epsilon." lightbox="true" >}}
 
 
 The above plots show that, as sample size increases, the mean estimator and variance estimator both converge to their true population parameters.  Likewise, examining the empirical probability plots, we can see that the probability that either estimate exceeds the epsilon thresholds shrinks to zero as the sample size increases.

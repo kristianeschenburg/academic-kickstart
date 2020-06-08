@@ -32,7 +32,7 @@ For one of the projects I'm working on, I have an array of multivariate data rel
 
 Additionally, for each vertex $v \in V$, we also have an associated scalar *label*, which we'll denote $l(v)$, that identifies what region of the cortex each vertex belongs to, the set of regions which we define as $L = \{1, 2, ... k\}$.  And finally, for each vertex $v \in V$, we also have a multivariate feature vector $r(v) \in \mathbb{R}^{1 \times k}$, that describes the strength of connectivity between it, and every region $l \in L$.
 
-{{< figure library="true" src="parcellation.png" title="Example of cortical map, and array of connectivity features." lightbox="true" >}}
+{{< figure  src="parcellation.png" title="Example of cortical map, and array of connectivity features." lightbox="true" >}}
 
 I'm interested in examining how "close" the connectivity samples of one region, $l_{j}$, are to another region, $l_{k}$.  In the univariate case, one way to compare a scalar sample to a distribution is to use the $t$-statistic, which measures how many standard deviations away from the mean a given sample is:
 
@@ -189,7 +189,7 @@ for l in labels:
             alpha=0.4, histtype='step')
 ```
 
-{{< figure library="true" src="IntraInterMahal.jpg" title="Empirical distributions of within-region (top) and between-region (bottom) $d^{2}$ values.  Each line is the distribution of the distance of samples in our ROI to a whole region." lightbox="true" >}}
+{{< figure  src="IntraInterMahal.jpg" title="Empirical distributions of within-region (top) and between-region (bottom) $d^{2}$ values.  Each line is the distribution of the distance of samples in our ROI to a whole region." lightbox="true" >}}
 
 As expected, the distribution of $d^{2}$ the distance of samples in our region of interest, $l_{T}$, to distributions computed from other regions are (considerably) larger and much more variable, while the profile of points within $l_{T}$ looks to have much smaller variance -- this is good!  This means that we have high intra-regional similarity when compared to inter-regional similarities.  This fits what's known in neuroscience as the ["cortical field hypothesis"](https://www.ncbi.nlm.nih.gov/pubmed/9651489).
 
@@ -218,7 +218,7 @@ plt.subplot(1,2,2)
 probplot(D2.squeeze(), sparams=mle_chi2_theory, dist=chi2, plot=plt);
 ```
 
-{{< figure library="true" src="Density.QQPlot.png" title="Density and QQ plot of null distribution." lightbox="true" >}}
+{{< figure  src="Density.QQPlot.png" title="Density and QQ plot of null distribution." lightbox="true" >}}
 
 From looking at the QQ plot, we see that the empirical density fits the theoretical density pretty well, but there is some evidence that the empirical density has heavier tails.  The heavier tail of the upper quantile could probability be explained by acknowledging that our starting cortical map is not perfect (in fact there is no "gold-standard" cortical map).  Cortical regions do not have discrete cutoffs, although there are reasonably steep [gradients in connectivity](https://www.ncbi.nlm.nih.gov/pubmed/25316338).  If we were to include samples that were considerably far away from the the rest of the samples, this would result in inflated densities of higher $d^{2}$ values.  
 
@@ -226,9 +226,9 @@ Likewise, we also made the distributional assumption that our connectivity vecto
 
 Finally, let's have a look at some brains!  Below, is the region we used as our target -- the connectivity profiles from vertices in this region were used to compute our mean vector and covariance matrix -- we compared the rest of the brain to this region.
 
-{{< figure library="true" src="Region_LT.png" title="Region of interest." lightbox="true" >}}
+{{< figure  src="Region_LT.png" title="Region of interest." lightbox="true" >}}
 
-{{< figure library="true" src="MahalanobisDistance.png" title="Estimated squared Mahalanobis distances, overlaid on cortical surface." lightbox="true" >}}
+{{< figure  src="MahalanobisDistance.png" title="Estimated squared Mahalanobis distances, overlaid on cortical surface." lightbox="true" >}}
 
 
 Here, larger $d^{2}$ values are in red, and smaller $d^{2}$ are in black.  Interestingly, we do see pretty large variance of $d^{2}$ spread across the cortex -- however the values are smoothly varying, but there do exists sharp boundaries.  We kind of expected this -- some regions, though geodesically far away, should have similar connectivity profiles if they're connected to the same regions of the cortex.  However, the regions with connectivity profiles most different than our target region are not only contiguous (they're not noisy), but follow known anatomical boundaries, as shown by the overlaid boundary map.

@@ -108,6 +108,6 @@ done <${subjects}
 
 Here's an example output from running ```qstat``` after submitting a batch of jobs to the cluster:
 
-{{< figure library="true" src="qsub.png" title="Example of qstat command, after submitting jobs view qsub." lightbox="true" >}}
+{{< figure src="qsub.png" title="Example of qstat command, after submitting jobs view qsub." lightbox="true" >}}
 
 One thing you'll notice is the column ```priority``` -- this is literally a ```priority queue``` data structure that I mentioned in my last post on the Watershed by Flooding algorithm.  Each job is submitted to the queue with a priority value assigned to it by the SGE software, and the jobs are processed in that order -- highest priority first, lowest priority last.  Your IT manager can personalize the priority values for specific users or types of jobs, such that they are given preference or moved back in line.  This represents an equitable way of distributing compute resources across users in a lab, generally using a first-come, first-serve basis, or restricting users to a certain number of nodes.

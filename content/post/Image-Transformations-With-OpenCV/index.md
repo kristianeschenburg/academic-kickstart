@@ -51,7 +51,7 @@ data = (data-data.min())/data.max()
 plt.imshow(data)
 ```
 
-{{< figure library="true" src="original.jpg" title="" lightbox="true" >}}
+{{< figure src="original.jpg" title="" lightbox="true" >}}
 
 
 For any linear transformations with ```cv2```, we can use the ```cv2.warpAffine``` method, which takes in the original image, some transformation matrix, and the size of the output image.
@@ -68,7 +68,7 @@ translated = cv2.warpAffine(data, translation, data.T.shape)
 plt.imshow(translated)
 ```
 
-{{< figure library="true" src="translated.jpg" title="" lightbox="true" >}}
+{{< figure src="translated.jpg" title="" lightbox="true" >}}
 
 Now, in order to rotate the image, we can use ```cv2.getRotationMatrix2D```.  We'll rotate our image by 45$^{\circ}$ .
 
@@ -82,7 +82,7 @@ rotated = cv2.warpAffine(data, M, (cols, rows))
 plt.imshow(rotated)
 ```
 
-{{< figure library="true" src="rotated.jpg" title="" lightbox="true" >}}
+{{< figure src="rotated.jpg" title="" lightbox="true" >}}
 
 Here are a few examples of randomly translating +/- 1, 5, or 9 voxels in the X and Y directions, and randomly rotating by 1, 5, or 9 degrees:
 
@@ -129,9 +129,9 @@ for rt in txfn:
     plt.show()
 ```
 
-{{< figure library="true" src="Composed.1.jpg" title="" lightbox="true" >}}
-{{< figure library="true" src="Composed.5.jpg" title="" lightbox="true" >}}
-{{< figure library="true" src="Composed.9.jpg" title="" lightbox="true" >}}
+{{< figure src="Composed.1.jpg" title="" lightbox="true" >}}
+{{< figure src="Composed.5.jpg" title="" lightbox="true" >}}
+{{< figure src="Composed.9.jpg" title="" lightbox="true" >}}
 
 While this approach of generating synthetic motion into MRI images is a poor model of how motion actually occurs during an MRI scan, there are a few things I learned here.  For example, if you define a measure of image similarity, like mutual information, entropy, or correlation ratio as a cost function, we can see how we can use ```warpAffine``` to find the optimal transformation matrix between two images.
 

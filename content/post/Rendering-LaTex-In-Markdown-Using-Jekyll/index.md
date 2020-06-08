@@ -28,7 +28,6 @@ image:
 projects: []
 ---
 
-
 In putting together this blog, I wanted to be able to talk about various mathematical topics that I found interesting, which inevitably lead to using LaTex in my posts.
 
 I'm currently using Atom as my editor (having converted from Sublime), and needed to install a bunch of packages first.  First and foremost, I wanted to be able to render my markdown posts before hosting them on the blog, and consequentially needed a way to render LaTex.  For this, I installed a few Atom packages:

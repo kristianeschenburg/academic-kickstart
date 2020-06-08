@@ -140,7 +140,7 @@ for i,n in enumerate(N):
     plt.violinplot(norm_clt[n], positions=[i],)
 ```
 
-{{< figure library="true" src="Normal_CLT.jpg" title="Central Limit Theorem applied to Normal Distribution." lightbox="true" >}}
+{{< figure src="Normal_CLT.jpg" title="Central Limit Theorem applied to Normal Distribution." lightbox="true" >}}
 
 As expected, we see that the Normal distribution mean and variance estimates are independent of the sample size.  In this case, we don't need to apply a variance stabiliing transformation.  We also see that the variance fluctuates around $5$.  Now, let's apply a simple function $g(\theta) = \theta^{2}$ to our data.  So $g\prime(\theta) = 2\theta$, and the variance of our function becomes $g\prime(\mu)^{2}\sigma^{2} = (2\mu)^{2} \sigma^{2} = 4\mu^{2}\sigma^{2}$.  Let's look at a few plots, as a function of changing $\mu$.
 
@@ -172,7 +172,7 @@ for j ,m in enumerate(mus):
         plt.violinplot(norm_clt[n], positions=[k],)
 ```
 
-{{< figure library="true" src="Normal_Squared.jpg" title="Central Limit Theorem applied to function of Normal Distribution." lightbox="true" >}}
+{{< figure src="Normal_Squared.jpg" title="Central Limit Theorem applied to function of Normal Distribution." lightbox="true" >}}
 
 We see that the variance increases as the mean increases, and that, as the sample sizes increase, the distributions converge to the $$N(0, 4\mu^{2}\sigma^{2})$$ asymptotic distribution.
 
@@ -248,7 +248,7 @@ for i,n in enumerate(N):
     plt.violinplot(pois_var[n], positions=[i])
 ```
 
-{{< figure library="true" src="Poisson.jpg" title="Variance stabilization of Poisson distribution." lightbox="true" >}}
+{{< figure src="Poisson.jpg" title="Variance stabilization of Poisson distribution." lightbox="true" >}}
 
 #### Variance Stabilization for the Exponential Distribution
 
@@ -289,7 +289,7 @@ for i,n in enumerate(N):
     plt.violinplot(exp_var[n], positions=[i])
 ```
 
-{{< figure library="true" src="Exponential.jpg" title="Variance stabilization of Exponential distribution." lightbox="true" >}}
+{{< figure src="Exponential.jpg" title="Variance stabilization of Exponential distribution." lightbox="true" >}}
 
 #### Example of Standard Error Computation Using Delta Method for Polynomial Regression
 
@@ -354,7 +354,7 @@ for j, measure in enumerate(['variance', 'kurtosis', 'skew', 'entropy']):
 plt.tight_layout()
 ```
 
-{{< figure library="true" src="bank_notes.jpg" title="Bank note feature distributions, based on note class." lightbox="true" >}}
+{{< figure src="bank_notes.jpg" title="Bank note feature distributions, based on note class." lightbox="true" >}}
 
 
 Based on the above plot, we can see that **variance**, **skew**, and **kurtosis** seem to be the most informative, while the **entropy** distributions do not seem to be that different based on bank note class.
@@ -404,5 +404,5 @@ for j, measure in enumerate(['variance', 'kurtosis', 'skew', 'entropy']):
 plt.tight_layout()
 ```
 
-{{< figure library="true" src="bank_notes_CI.jpg" title="Confidence intervals for each feature, computed using Delta Method." lightbox="true" >}}
+{{< figure src="bank_notes_CI.jpg" title="Confidence intervals for each feature, computed using Delta Method." lightbox="true" >}}
 

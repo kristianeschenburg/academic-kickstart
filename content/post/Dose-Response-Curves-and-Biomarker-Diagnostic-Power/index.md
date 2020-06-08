@@ -161,7 +161,7 @@ for i, ax in enumerate(fig.axes):
 plt.tight_layout()
 ```
 
-{{< figure library="true" src="Example.Histograms.jpg" title="Example Case/Control datasets." lightbox="true" >}}
+{{< figure src="Example.Histograms.jpg" title="Example Case/Control datasets." lightbox="true" >}}
 
 ```python
 fig, (ax1) = plt.subplots(1, 1)
@@ -179,7 +179,7 @@ for mean, case_data in samples.items():
     plt.title('ROC for Varying Case Distributions', fontsize=15)
 ```
 
-{{< figure library="true" src="Example.ROC.Curves.jpg" title="ROC curves for example datasets." lightbox="true" >}}
+{{< figure src="Example.ROC.Curves.jpg" title="ROC curves for example datasets." lightbox="true" >}}
 
 We see that, as the distributions become less separated, the ability to distinguish points from either distribution is diminished.  This is shown by 1) a flattening of the ROC curve towards the diagonal, along with 2) the integration of the ROC curve, which generates the AUC metric.  When the distributions are far apart (as when the $\mu_{Case} = 5$), it is quite easy for a simple model to distinguish points sampled from either distribution, meaning this hypothetical model has good diagnostic power.
 
@@ -290,7 +290,7 @@ plt.legend(fontsize=15);
 plt.tight_layout()
 ```
 
-{{< figure library="true" src="DR.Intercepts.jpg" title="Intercept distributions for synthetic dose-response curves." lightbox="true" >}}
+{{< figure src="DR.Intercepts.jpg" title="Intercept distributions for synthetic dose-response curves." lightbox="true" >}}
 
 Slope histograms look like two different $Beta$ distributions:
 
@@ -305,7 +305,7 @@ plt.legend(fontsize=15);
 plt.tight_layout()
 ```
 
-{{< figure library="true" src="DR.Slopes.jpg" title="Slope distributions for synthetic dose-response curves." lightbox="true" >}}
+{{< figure src="DR.Slopes.jpg" title="Slope distributions for synthetic dose-response curves." lightbox="true" >}}
 
 Now we'll generate some fake dose-response curves for each of the 1000 Controls, and 1000 Cases.  We'll plot a subset of these curves to visualize our cross-group curve variability.
 
@@ -345,7 +345,7 @@ custom_lines = [Line2D([0], [0], color='r', lw=4),
 plt.legend(custom_lines, ['Control', 'Case'], fontsize=20);
 ```
 
-{{< figure library="true" src="DR.Curves.jpg" title="Case/Control dose-response curves." lightbox="true" >}}
+{{< figure src="DR.Curves.jpg" title="Case/Control dose-response curves." lightbox="true" >}}
 
 For our preliminary biomarker of interest, let's look at the **ec50**, which is the dose at which *50%* of the cells show some response (i.e. where our $y$-axis = 0.5), for each sample in our dataset.  We'll plot these doses as a function of Cases and Controls.
 
@@ -360,7 +360,7 @@ plt.ylabel('Density', fontsize=20);
 plt.yticks(fontsize=15);
 ```
 
-{{< figure library="true" src="DR.ec50.jpg" title="Biomarker distributions: ec50 for Cases and Controls." lightbox="true" >}}
+{{< figure src="DR.ec50.jpg" title="Biomarker distributions: ec50 for Cases and Controls." lightbox="true" >}}
 
 If we select a different threshold -- i.e. instead of 0.5, we can iterate over the range of 0.1 - 0.9, for example, in increments of 0.1 -- we generate different biomarkers (ec10, ec20 ... ec90).  We can treat each biomarker as a different classification model, and assess how powerful that model is at assessing whether someone will develop cardiotoxicity or not.  To do so, we'll create distributions for each biomarker (not shown), and then generate ROC curves and AUC values for each curve.
 

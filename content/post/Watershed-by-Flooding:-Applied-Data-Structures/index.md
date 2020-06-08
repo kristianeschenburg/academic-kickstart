@@ -182,6 +182,6 @@ class PriorityFlood(object):
 
 ```
 
-{{< figure library="true" src="WSA.jpg" title="Example of PriorityFlooding algorithm, applied to gradient of inferiorparietal region.  Shown on inflated and flattened cortical surfaces." lightbox="true" >}}
+{{< figure src="WSA.jpg" title="Example of PriorityFlooding algorithm, applied to gradient of inferiorparietal region.  Shown on inflated and flattened cortical surfaces." lightbox="true" >}}
 
 One caveat that came up is that the **PriorityQueue** class does not check for duplicates -- that is, two vertices might share an adjacent vertex, and this vertex might have already been added to the heap.  In this case, we would unnecessarily view the same vertices many times.  To alleviate this, we create a boolean Numpy array, ```in_queue```, that stores whether an item is already in the queue.

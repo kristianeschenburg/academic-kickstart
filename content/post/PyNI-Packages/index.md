@@ -124,11 +124,11 @@ with open("README.md", "r") as fh:
  
  Under your Test PyPi account, click your username in the top right, go to ```Account Settings```:
 
-{{< figure library="true" src="notebook_figures/packages/PyPi_Account.png" title="" lightbox="true" >}}
+{{< figure src="notebook_figures/packages/PyPi_Account.png" title="" lightbox="true" >}}
  
  Scroll down and click ```Add API Token```:
 
- {{< figure library="true" src="notebook_figures/packages/PyPi_Token.png" title="" lightbox="true" >}}
+ {{< figure src="notebook_figures/packages/PyPi_Token.png" title="" lightbox="true" >}}
  
  Follow the instructions there, making sure to select "Entire Account" option under the ```Scope``` tab.  
  
@@ -227,7 +227,7 @@ I don't generally upload my code to PyPi (probably scared bugs in the code, and 
 
 Here is the directory containing all my code:
 
-{{< figure library="true" src="notebook_figures/packages/pysurface_code.png" title="" lightbox="true" >}}
+{{< figure src="notebook_figures/packages/pysurface_code.png" title="" lightbox="true" >}}
 
 You'll see 5 different modules: ```graphs```, ```operations```, ```plotting```, ```spectra```, and ```utilities```, and you'll note that each module directory has a ```__init__.py``` file.
 
@@ -289,7 +289,7 @@ python setup.py bdist_wheel
 
 based off the ```dist```, ```build```, and ```pysurface.egg-info``` directories.  ```dist``` contains a file called ```pysurface-0.0.4-py3-none.any.whl```, which is the actual distribution that can be used for installation.  I've uploaded the code to Test PyPi, and this is what we see:
 
-{{< figure library="true" src="notebook_figures/packages/PyPi_Project.png" title="" lightbox="true" >}}
+{{< figure src="notebook_figures/packages/PyPi_Project.png" title="" lightbox="true" >}}
 
 We can then install the package and all of it's dependencies from TestPypi via
 
