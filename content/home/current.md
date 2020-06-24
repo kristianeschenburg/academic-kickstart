@@ -25,8 +25,6 @@ date_format = "Jan 2006"
   date_start = "2014-09-20"
   date_end = 0
   description = """
-
-  Research projects include:
   
   * Segmenting the human neo-cortex based on brain connectivity patterns using parametric and non-parametric clustering approaches
   * Characterizing topographic organization of neuron projection patterns using multivariate spatial modeling methods

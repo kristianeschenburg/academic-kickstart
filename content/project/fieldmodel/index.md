@@ -32,13 +32,19 @@ url_video: ""
 slides: ""
 ---
 
-This is a Python package for fitting densities to scalar fields distributed on the domain of regular meshes.  Rather than using the spatial coordinates of the mesh on which the data is distributed, this package fits isotropic distributions using the geodesic distances between mesh vertices.
+This is a Python package for fitting densities to scalar fields distributed on the domain of regular meshes.  This package is an implementation of the methodology described [here](https://pubmed.ncbi.nlm.nih.gov/23110879/).  Rather than using the spatial coordinates of the mesh on which the data is distributed, this package fits isotropic distributions using the geodesic distances between mesh vertices.
 
 Given a scalar field assigning, let's say, elevation values to latitude-longitude coordinates of Mount Rainier, we could use **fieldmodel** to fit a Gaussian distribution to this elevation profile.  The output of this fitting procedure would be 2 parameters: a ```mean``` parameter (centered on the true summit coordinates) and a ```sigma``` parameter, a measure of how quickly the elevation profile decays as we move away from the summit.
 
 {{< figure src="rainier.jpg" title="Model convergence in synthetic data." lightbox="true" >}}
 
-Along with fitting procedure, **fieldmodel** also offers some basic plotting functionality to visualize the fitted densities along with the data to which those densities were fit.
+The code iterates over all possible ```mean``` locations in a set, and optimizes the ```sigma``` parameter using a **BFGS** minimization procedure.  I provide 3  optimality criteria options:
+
+ 1. maximization of spatial correlation
+ 2. maximization of signal amplitude
+ 3. minimization of least-squares error
+ 
+ Along with fitting procedure, **fieldmodel** also offers some basic plotting functionality to visualize the fitted densities alongside the data to which those densities were fit.
 
 ## How to install and use:
 ```bash

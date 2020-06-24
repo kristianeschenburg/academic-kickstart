@@ -26,7 +26,7 @@ date_format = "Jan 2006"
   date_start = "2017-04-01"
   date_end = "2017-06-01"
   description = """
-  Responsibilities include:
+
   * Developed meta-genome clustering algorithms for proprietary Python-based software platform
   * Learned and employed principles of testing-driven software development
   * Gained experience using AWS for cloud computing
@@ -40,7 +40,6 @@ date_format = "Jan 2006"
   date_start = "2016-06-01"
   date_end = "2016-09-01"
   description = """
-  Responsibilities include:
   
   * Studied data structures related to dynamic graphs and networks
   * Analyzed dynamical systems of functional MRI to characterize coherent spatial patterns of brain activity

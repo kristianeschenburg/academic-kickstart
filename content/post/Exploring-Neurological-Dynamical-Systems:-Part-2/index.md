@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-In my previous post on [Dynamic Mode Decomposition]({% post_url 2018-05-24-dynamic-mode-decomposition-part-1 %}), I discussed the foundations of DMD as a means for linearizing a dynamical system.  In this post, I want to look at a way in which we can use rank-updates to incorporate new information into the spectral decomposition of our linear operator, $A$, in the event that we are generating online measurements from our dynamical system.  If you want a more-detailed overview of this topic, {% cite zhang_dmd --file dmd %} developed the theory, along with open source code, for testing this method.
+In my previous post on [Dynamic Mode Decomposition]( {{< relref "/post/exploring-neurological-dynamical-systems:-part-1/index.md" >}} ), I discussed the foundations of DMD as a means for linearizing a dynamical system.  In this post, I want to look at a way in which we can use rank-updates to incorporate new information into the spectral decomposition of our linear operator, $A$, in the event that we are generating online measurements from our dynamical system.  If you want a more-detailed overview of this topic, [Zhang et al.](https://arxiv.org/abs/1707.02876) developed the theory, along with open source code, for testing this method.
 
 Recall that we are given an initial data matrix
 
@@ -72,7 +72,7 @@ A &= YX^{T}(XX^{T})^{-1} \\\\
 A &= QP\_{x}
 \end{align}$$
 
-where $Q = YX^{T}$ and $P_{x} = (XX^{T})^{-1}$.  Now, let's say you observe some new data $x_{m+1}, y_{m+1}$, and you want to incorporate this new data into your $A$ matrix.  As in the previous post on [Rank-One Updates]({% post_url 2018-05-11-rank-one-updates %}), we saw that directly computing the inverse could potentially be costly, so we want to refrain from doing that if possible.  Instead, we'll use the Shermann-Morrison-Woodbury theorem again to incorporate our new $x_{m+1}$ sample into our inverse matrix, just as before:
+where $Q = YX^{T}$ and $P_{x} = (XX^{T})^{-1}$.  Now, let's say you observe some new data $x_{m+1}, y_{m+1}$, and you want to incorporate this new data into your $A$ matrix.  As in the previous post on [rank-one updates]( {{< relref "/post/rank-one-updates/index.md" >}} ), we saw that directly computing the inverse could potentially be costly, so we want to refrain from doing that if possible.  Instead, we'll use the Shermann-Morrison-Woodbury theorem again to incorporate our new $x_{m+1}$ sample into our inverse matrix, just as before:
 
 $$\begin{align}
 (X_{m+1}X^{T}_{m+1})^{-1} = P_{x} + \frac{P_{x}x_{m+1}x_{m+1}^{T}P_{x}}{1 + x_{m+1}^{T}P_{x}x_{m+1}}
@@ -94,5 +94,5 @@ Y_{m+1} X_{m+1}^{T} &= YX^{T} + y_{m+1}x_{m+1}^{T} \\\\
 &= Q + y_{m+1}x_{m+1}^{T}
 \end{align}$$
 
-which is simply the sum of our original matrix $Q$, plus a rank-one matrix.  {% cite zhang_dmd --file dmd %} go on to describe some pretty cool "local" DMD schemes, by incorporating weights, as well as binary thresholds, that are time-dependent into the computation of the linear operator, $A$.
+which is simply the sum of our original matrix $Q$, plus a rank-one matrix.  [Zhang et al.](https://arxiv.org/abs/1707.02876) go on to describe some pretty cool "local" DMD schemes, by incorporating weights, as well as binary thresholds, that are time-dependent into the computation of the linear operator, $A$.
 
