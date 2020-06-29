@@ -25,7 +25,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: [submet]
 ---
 
 I'm working with some multi-dimensional float-valued data -- I'll call a single instance of this data $X \in \mathbb{R}^{n \times k}$.  I have multiple samples $X_{1}, X_{2}...X_{t}$, and want to compare these subspaces -- namely, I want to compute the distance between pairs of subspaces.

@@ -3,8 +3,8 @@ title: fieldmodel
 summary: package to fit distributions over scalar fields on the domain of regular meshes
 tags:
 - image processing
-- geodesics
 - regular mesh
+- spatial densities
 date: "2020-06-10T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

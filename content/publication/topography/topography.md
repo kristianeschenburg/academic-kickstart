@@ -29,7 +29,6 @@ summary: Using non-linear dimensionality reduction of functional brain connectiv
 
 tags:
 - Laplacian eigenmaps
-- geodesics
 - Procrustes
 - dimensionality reduction
 featured: true
