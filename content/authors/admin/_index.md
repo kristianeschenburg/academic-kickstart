@@ -68,6 +68,6 @@ social:
 
 I'm a Biomedical Engineering Ph.D. student at the University of Washington in the [Integrated Brain Imaging Center](http://ibic.washington.edu/#&panel1-1).  Using techniques from statistics, graph theory, optimization, and machine learning, I'm developing methods to help explore the relationship between brain structure and function.  I'm driven by curiosity and fueled by coffee.
 
-I'm interested in making scientific research more interpretable, more open, and more equitable.  I'm a firm believer in the idea that code is as much a part of hypothesis-driven design and the scientific process as any other tool or instrument.  And that one of the best ways to push computational sciences forward is through open-source software development.
+I'm a firm believer in the idea that code is as much a part of hypothesis-driven design and the scientific process as any other tool or instrument.  And that some of the best ways to move computational sciences forward and make them more accessible, collaborative, and equitable are through open-source software development, open-access publication, and technical writing.
 
-When I'm not thinking about science, I like to ski up (and down) hill, mountaineer, trail run, and tend to my tomato garden.
+When I'm not thinking about the brain, I like to ski up (and down) hill, mountaineer, trail run, and tend to my tomato garden.
