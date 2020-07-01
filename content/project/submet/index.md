@@ -66,3 +66,6 @@ print(S.distance_)
 
 
 ```SubspaceDistance``` does not currently support pairwise distance computations between more than a single pair of subspaces, in an analogous way to [Scipy's](https://docs.scipy.org/doc/scipy/reference/index.html) [pdist](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.pdist.html#scipy.spatial.distance.pdist) or [cdist](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.cdist.html#scipy.spatial.distance.cdist) methods.  I am working on allowing pairwise computations using [numba](https://numba.pydata.org/numba-doc/0.11/index.html).
+
+
+**Update as of 6/30/2020: the above issue has been fixed and ```submet``` now allows for pairwise distance matrix computations, rather than only single subspace pair comparisons.  See this [pull request](https://github.com/kristianeschenburg/submet/pull/2)**
