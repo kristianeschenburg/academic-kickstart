@@ -94,7 +94,7 @@ Now here is the clever part, and where the [DGL message passing interface](https
 
 1) compute node feature differences between all source / destination node pairs
 
-2) aggregate incoming messages from destrination nodes, scaled by the kernel weights, to update the source node features
+2) aggregate and reduce incoming messages from destination nodes scaled by the kernel weights, to update the source node features
 
 In the forward pass of our layer, we perform the following steps:
 
@@ -165,5 +165,5 @@ print(logits)
 tensor([[0.1873, 0.7217],
         [0.1405, 0.5413],
         [0.0936, 0.3608],
-        [0.1405, 0.5413]], grad_fn=<GSpMMBackward>)
+        [0.1405, 0.5413]], grad_fn=<AddBackward0>)
 ```
