@@ -23,7 +23,7 @@ bio: ""
 interests:
 - Cortical spatial gradients
 - Connectivity network analyses
-- Unsupervised cortical mapping
+- Cortical mapping 
 
 education:
   courses:
