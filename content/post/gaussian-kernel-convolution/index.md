@@ -5,7 +5,7 @@ title: "Implementation: Gaussian Graph Convolutional Networks with Deep Graph Li
 subtitle: ""
 summary: ""
 authors: []
-tags: []
+tags: [pytorch, AI, graph convolution networks]
 categories: []
 date:   2020-12-07T23:24:17-07:00
 lastmod: 2020-12-07T23:24:17-07:00
