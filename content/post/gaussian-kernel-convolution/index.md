@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Implementation: Gaussian Graph Convolutional Networks with Deep Graph Library"
+title: "Gaussian Graph Convolutional Networks"
 subtitle: ""
 summary: ""
 authors: []
