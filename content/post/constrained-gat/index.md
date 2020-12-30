@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-In their recent [paper](https://arxiv.org/abs/1910.11945), Wang et al. propose a few updates to the Graph Attention Network (GAT) neural network algorithm.  I've implemented this algorithm in DGL (scroll [here](#Implementation) to skip the technical bit).  Briefly, GATs are a [recently-developed](https://arxiv.org/pdf/1710.10903.pdf) neural network architecture applied to data distributed over a graph domain.  We can think of graph convolutional networks as progressively transforming and aggregating signals from within a local neighborhood of a node.  At each iteration of this process, we include implicitly merge signals from further and further away from the node of interest and learn unique representations of nodes that are dependent on their neighborhood.
+In their recent [paper](https://arxiv.org/abs/1910.11945), Wang et al. propose a few updates to the Graph Attention Network (GAT) neural network algorithm.  I've implemented this algorithm in DGL (scroll [here](#Implementation) to skip the technical bits).  Briefly, GATs are a [recently-developed](https://arxiv.org/pdf/1710.10903.pdf) neural network architecture applied to data distributed over a graph domain.  We can think of graph convolutional networks as progressively transforming and aggregating signals from within a local neighborhood of a node.  At each iteration of this process, we include implicitly merge signals from further and further away from the node of interest and learn unique representations of nodes that are dependent on their neighborhood.
 
 GATs incorporate the seminal idea of "attention" into this learning process.  In each message-passing step, rather than updating the features of a source-node via equally-weighted contributions of neighborhood nodes, GAT models learn an attention function -- i.e. they learn how to differentially pay attention to various signals in the neighborhood.  In this way, the algorithm can learn to focus on imporant signals and disregard superfluous signals.  If we consider neural networks as universal funtion approximators, the attention mechanism improves the approximating ability by incorporating multiplicative weight factors into the learning.
 
@@ -58,7 +58,7 @@ Taken together, the authors deem these margin-based loss and constrained aggrega
 
 ## Implementation
 
-I've implemented the Constrained Graph Attention Network layer in [Deep Graph Library](https://www.dgl.ai/) (DGL) -- the source code for this layer can be found [here](https://github.com/kristianeschenburg/parcellearning/blob/master/parcellearning/conv/cgatconv.py).  This implementation makes use of the original DGL ```GATConv``` layer structure, with modifications made for the constraints and aggregations.  Specifically, the API for ```CGATConv``` has the following modifications:
+I wasn't able to find an implementation of the Constrained Graph Attention Network for my own purposes, so I've implemented the algorithm myself in [Deep Graph Library](https://www.dgl.ai/) (DGL) -- the source code for this convolutional layer can be found [here](https://github.com/kristianeschenburg/parcellearning/blob/master/parcellearning/conv/cgatconv.py).  This implementation makes use of the original DGL ```GATConv``` layer structure, with modifications made for the constraints and aggregations.  Specifically, the API for ```CGATConv``` has the following modifications:
 
 ```python
 
