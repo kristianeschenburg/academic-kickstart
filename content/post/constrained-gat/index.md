@@ -51,7 +51,7 @@ $$\begin{align}
 The second constraint, $\mathcal{L_{b}}$, address the oversmoothing issue, by enforcing that learned attentions between pairs of adjacent nodes with the same label be higher than attention between pairs of adjacent nodes with different labels:
 
 $$\begin{align}
-\mathcal{L_{b}} &= \sum_{i \in V}\sum_{j \in \mathcal{N_{i}^{+}}} \sum_{k \in \mathcal{N_{i}}} max(0, \phi(v_{i},v_{k}) + \zeta_{b} - \phi(v_{i},v_{j}))
+\mathcal{L_{b}} &= \sum_{i \in V}\sum_{j \in \mathcal{N_{i}^{+}}} \sum_{k \in \mathcal{N_{i}^{-}}} max(0, \phi(v_{i},v_{k}) + \zeta_{b} - \phi(v_{i},v_{j}))
 \end{align}$$
 
 In both cases, $\phi(,)$ is the attention function between a pair of nodes, and $\zeta_{g}$ and $\zeta_{b}$ are slack variables controlling the margin between attention values.  The first loss function, $\mathcal{L_{g}}$, can be implemented via negative sampling of nodes (the authors actually perform importance-based negative sampling based on attention-weighted node degrees, but showed that this only marginally improved classification accuracy in benchmark datasets).
