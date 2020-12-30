@@ -77,7 +77,7 @@ CGATCONV(in_feats,
 
 Of note is the fact that the ```attn_drop``` parameter has been substituted by the ```top_k``` parameter in order to mitigate oversmoothing, and the two slack variables $\zeta_{g}$ and $\zeta_{b}$ are provided as ```graph_margin``` and ```class_margin```.  
 
-With regards to the loss functions, the authors perform all-pairs difference between all edges incident on a source node, rather than summation of the positive / negative sample attentions and same / different label attentions.  In this way, they anchor loss values to specific nodes, promoting learning.  The graph structure loss function $\mathcal{L_{g}}$ is implemented with the ```graph_loss``` reduction function below:
+With regards to the loss functions, the authors compute all-pairs differences between all edges incident on a source node, instead of summing over the positive / negative sample attentions ($\mathcal{L_{g}}$) and same / different label attentions ($\mathcal{L_{b}}$) and then differencing these summations.  In this way, the C-GAT model anchors the loss values to specific nodes, promoting learning of more generalizable attention weights.  The graph structure loss function $\mathcal{L_{g}}$ is implemented with the ```graph_loss``` reduction function below:
 
 ```python
 def graph_loss(nodes):
