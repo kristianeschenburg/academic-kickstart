@@ -42,14 +42,19 @@ Y = AX^{l}
 
 where $A_{n \times n}$ is the attention weight matrix with $A_{i,j} = \alpha_{i,j}$ if $j \in \mathcal{N_{i}}$ and $0$ otherwise.  Because $\sum_{j\in \mathcal{N_{i}}} \alpha_{i,j} = 1$, we can view $A$ as a random walk transition probability matrix.  If we assume that graph $G=(V,E)$ has $K$ connected components, repeated application of $A$ to $X$ distributed over $G$ will result in a stationary distribution of node features within each connected component -- that is, the features vectors of the nodes within each connected component will converge on the component mean.  However, as the authors point out, we typically have multiple layers $l_{1}\dots l_{j}$, each with their own attention matrix $A_{1} \dots A_{j}$, each representing a unique transition probability matrix.  Because we generally do not have disconnected components, nodes from different classes will be connected -- consequentially, deep GAT networks will mix and smooth signals from different adjacent components, resulting in classification performance that worsens with network depth.  Importantly, multi-head attention networks do not alleviate this convergence issue -- each head can be viewed as a unique probability transition matrix, which all suffer from the same oversmoothing issue as $l \rightarrow \infty$.
 
-Wang et al. propose to incorporate two margin-based constraints into the learning process.  The first constraint, $\mathcal{L_{g}}$, addresses the overfitting issue, by enforcing that learned attentions between adjacent pairs of nodes be higher than attentions between distant pairs of nodes.  The second constraint, $\mathcal{L_{b}}$, address the oversmoothing issue, by enforcing that learned attentions between pairs of adjacent nodes with the same label be higher than attention between pairs of adjacent nodes with different labels:
+Wang et al. propose to incorporate two margin-based constraints into the learning process.  The first constraint, $\mathcal{L_{g}}$, addresses the overfitting issue, by enforcing that learned attentions between adjacent pairs of nodes be higher than attentions between distant pairs of nodes.  
 
 $$\begin{align}
-\mathcal{L_{g}} &= \sum_{i \in V} \sum_{j \in \mathcal{N_{i}} \setminus \mathcal{N_{i}^{-}}} \sum_{k \in V\setminus \mathcal{N_{i}}} max(0, \phi(v_{i},v_{k}) + \zeta_{g} - \phi(v_{i},v_{j})) \\\\
+\mathcal{L_{g}} &= \sum_{i \in V} \sum_{j \in \mathcal{N_{i}} \setminus \mathcal{N_{i}^{-}}} \sum_{k \in V\setminus \mathcal{N_{i}}} max(0, \phi(v_{i},v_{k}) + \zeta_{g} - \phi(v_{i},v_{j}))
+\end{align}$$
+
+The second constraint, $\mathcal{L_{b}}$, address the oversmoothing issue, by enforcing that learned attentions between pairs of adjacent nodes with the same label be higher than attention between pairs of adjacent nodes with different labels:
+
+$$\begin{align}
 \mathcal{L_{b}} &= \sum_{i \in V}\sum_{j \in \mathcal{N_{i}^{+}}} \sum_{k \in \mathcal{N_{i}}} max(0, \phi(v_{i},v_{k}) + \zeta_{b} - \phi(v_{i},v_{j}))
 \end{align}$$
 
-where $\phi(,)$ is the attention function between a pair of nodes, and $\zeta_{g}$ and $\zeta_{b}$ are slack variables controlling the margin between attention values.  The first loss function, $\mathcal{L_{g}}$, can be implemented via negative sampling of nodes.  
+In both cases, $\phi(,)$ is the attention function between a pair of nodes, and $\zeta_{g}$ and $\zeta_{b}$ are slack variables controlling the margin between attention values.  The first loss function, $\mathcal{L_{g}}$, can be implemented via negative sampling of nodes.  
 
 The authors propose one final addition to alleviate the oversmoothing issue posed by vanilla GATs.  Rather than aggregating over all adjacent nodes in a neighborhood, the authors propose to aggregate over the nodes with the $K$ greatest attention values.  Because the class boundary loss $\mathcal{L_{b}}$ enforces large attentions on nodes of the same label and small attention on nodes of different labels, aggregating over the top $K$ nodes will tend to exclude nodes of different labels in the message passing step, thereby preventing oversmoothing.  The authors show that this constrained aggregation approach is preferable to attention dropout, as applied in the original [GAT paper](https://arxiv.org/pdf/1710.10903.pdf).  <a name="Implementation">
 Taken together, the authors deem these margin-based loss and constrained aggregation "Constrained Graph Attention Network" (C-GAT).
