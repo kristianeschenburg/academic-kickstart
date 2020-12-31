@@ -25,7 +25,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: [parcellearning]
 ---
 
 I'm using [graph convolutional networks](https://tkipf.github.io/graph-convolutional-networks/) as a tool to segment the cortical surface of the brain.  This research resides in the domain of *node classification* using *inductive learning*.  By node classification, I mean that we wish to assign a discrete label to cortical surface locations (nodes / vertices in a graph) on the basis of some feature data and brain network topology.  By inductive learning, I mean that we will train, validate, and test on datasets with possibly different graph topologies -- this is in contrast to *transductive learning* that learns models that do not generalize to arbitrary network topology.

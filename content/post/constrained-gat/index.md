@@ -25,7 +25,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: [parcellearning]
 ---
 
 In their recent [paper](https://arxiv.org/abs/1910.11945), Wang et al. propose a few updates to the Graph Attention Network (GAT) neural network algorithm (if you want to skip the technical bit and get to the code, click [here](#Implementation)).  Briefly, GATs are a [recently-developed](https://arxiv.org/pdf/1710.10903.pdf) neural network architecture applied to data distributed over a graph domain.  We can think of graph convolutional networks as progressively transforming and aggregating signals from within a local neighborhood of a node.  At each iteration of this process, we implicitly merge signals from larger and larger neighborhoods of the node of interest, and thereby learn unique representations of nodes that are dependent on their surroundings.

@@ -32,7 +32,7 @@ url_video: ""
 slides: ""
 ---
 
-See my [post]( {{< relref "/post/comparing-subspaces/index.md" >}} ) with a brief algorithmic introduction for computing distances between pairs of subspaces.  Featured image from [Melissa Nealy](https://www.simonsfoundation.org/2019/04/02/brain-areas-may-use-subspace-communication-to-talk-to-one-another/).
+See my [post]( {{< relref "/post/comparing-subspaces/index.md" >}} ) with a brief algorithmic introduction for computing distances between pairs of subspaces.
 
 ```submet``` is a Python package for computing pairwise distances between equidimensional subspaces.  All of these subspace metrics are dependent on the principle angles between the two subspaces.  ```submet``` implements an [sklearn]()-styled interface with a fitting method via a class called ```SubspaceDistance```, along with a variety of metrics in a class called ```Metric```.
 
