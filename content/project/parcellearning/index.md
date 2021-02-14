@@ -33,7 +33,7 @@ url_video: ""
 slides: ""
 ---
 
-This is a python package to apply various graph neural network model to brain connectivity data to learn cortical brain maps.  These models are based on the [Deep Graph Library](https://www.dgl.ai/).
+This is a python package to apply various graph neural network models to brain connectivity data to learn cortical brain maps.  These models address the issue of node classification, as commonly seen in the graph representation learning community.  These models are based on the [Deep Graph Library](https://www.dgl.ai/).
 
 Current models include the following:
   1. Graph Convolution Network ([paper](https://arxiv.org/abs/1609.02907))
