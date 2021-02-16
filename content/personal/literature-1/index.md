@@ -28,9 +28,7 @@ image:
 projects: []
 ---
 
-I'm interested in keeping better track of the books I've read recently, and those I'm currently reading.  One of my recent goals was to be much more meticulous about defining words I don't know, which in all honestly has made reading a much slower process, but has added **so** much more depth to the material.  Also I've found, empirically, that physically looking words up as I'm reading and defining them in context helps me retain their meaning.  I like the tangibility of actual books, so I ended up buying an Oxford dictionary for that purpose.  It's useful for me to annotate material in the books I'm reading without constantly going back and forth with my phone.  I actually think it might be kind of fun to keep an active list of new words I come across!
-
-
+I'm interested in keeping better track of the books I've read recently, and those I'm currently reading.  One of my recent goals was to be more meticulous about defining words I don't know, which, in all honestly, has made reading a much slower process, but has added **so** much more depth to the material.  I've also found, empirically, that physically looking words up as I'm reading and defining them in context helps me retain their meaning.  I like the tangibility of actual books, so I ended up buying an Oxford dictionary for that purpose.  It's useful for me to annotate material in the books I'm reading without constantly going back and forth with my phone.  I actually think it might be kind of fun to keep an active list of new words I come across!
 
 Anyways, currently reading:
  * *Gravity's Rainbow* by Thomas Pynchon

@@ -32,12 +32,12 @@ My friend David moved to London recently, so we set out to do a long trail-run b
 
 <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/4013414810/embed/59ccf355aa4b63a4d2aa6bca46916f379c4dd0a8'></iframe>
 
-{{< figure src="./morning.jpg" title="" caption="" lightbox="true" >}}
+{{< figure src="./morning.jpg" title="" caption="Nothing beats the morning alpenglow of the Cascades." lightbox="true" >}}
 
-{{< figure src="./jacket.jpg" title="" caption="" lightbox="true" >}}
+{{< figure src="./jacket.jpg" title="" caption="Chiwawa Peak in the background.  With so much green on the western slopes of the Cascades, you could be forgiven for forgetting how magnificent the eastern is." lightbox="true" >}}
 
-{{< figure src="./snowfield.jpg" title="" caption="" lightbox="true" >}}
+{{< figure src="./snowfield.jpg" title="" caption="Ascending the Spider Glacier.  We saw some small crevasses on the way up, but the ice was so melted out (nearly gone, in fact), that we chanced the rope-free climb." lightbox="true" >}}
 
-{{< figure src="./lake.jpg" title="" caption="" lightbox="true" >}}
+{{< figure src="./lake.jpg" title="" caption="Alpine tributary turbulence in Lyman Lake" lightbox="true" >}}
 
-{{< figure src="./glacier.jpg" title="" caption="" lightbox="true" >}}
+{{< figure src="./glacier.jpg" title="" caption="Glacier Peak: another one of my top 5 Spring skiing goals for 2021." lightbox="true" >}}
