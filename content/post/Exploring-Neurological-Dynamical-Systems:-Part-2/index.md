@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-In my previous post on [Dynamic Mode Decomposition]( {{< relref "/post/exploring-neurological-dynamical-systems:-part-1/index.md" >}} ), I discussed the foundations of DMD as a means for linearizing a dynamical system.  In this post, I want to look at a way in which we can use rank-updates to incorporate new information into the spectral decomposition of our linear operator, $A$, in the event that we are generating online measurements from our dynamical system.  If you want a more-detailed overview of this topic, [Zhang et al.](https://arxiv.org/abs/1707.02876) developed the theory, along with open source code, for testing this method.
+In my previous post on [dynamic mode decomposition]( {{< relref "/post/exploring-neurological-dynamical-systems:-part-1/index.md" >}} ), I discussed the foundations of DMD as a means for linearizing a dynamical system[^1][^2][^3].  In this post, I want to look at a way in which we can use rank-updates to incorporate new information into the spectral decomposition of our linear operator, $A$, in the event that we are generating online measurements from our dynamical system[^4] -- see the citation below if you want a more-detailed overview of this topic along with open source code for testing this method.
 
 Recall that we are given an initial data matrix
 
@@ -94,5 +94,12 @@ Y_{m+1} X_{m+1}^{T} &= YX^{T} + y_{m+1}x_{m+1}^{T} \\\\
 &= Q + y_{m+1}x_{m+1}^{T}
 \end{align}$$
 
-which is simply the sum of our original matrix $Q$, plus a rank-one matrix.  [Zhang et al.](https://arxiv.org/abs/1707.02876) go on to describe some pretty cool "local" DMD schemes, by incorporating weights, as well as binary thresholds, that are time-dependent into the computation of the linear operator, $A$.
+which is simply the sum of our original matrix $Q$, plus a rank-one matrix.  The authors go on to describe some pretty cool "local" DMD schemes, by incorporating weights, as well as binary thresholds, that are time-dependent into the computation of the linear operator, $A$.
 
+[^1]: P.J. Schmid. [Dynamic mode decomposition of numerical and experimental data](https://hal-polytechnique.archives-ouvertes.fr/file/index/docid/1020654/filename/DMS0022112010001217a.pdf). Journal of Fluid Mechanics 656.1. 2010.
+
+[^2]: Tu et al. [On Dynamic Mode Decomposition: Theory And Applications](http://cwrowley.princeton.edu/papers/Tu-DMD.pdf)
+
+[^3]: Kunert-Graf et al. [Extracting Reproducible Time-Resolved Resting State Networks Using Dynamic Mode Decomposition](https://www.frontiersin.org/articles/10.3389/fncom.2019.00075/full). Front. Comput. Neurosci. 2019.
+
+[^4]: Zhang et al. [Online dynamic mode decomposition for time-varying systems](https://arxiv.org/abs/1707.02876). 2017.

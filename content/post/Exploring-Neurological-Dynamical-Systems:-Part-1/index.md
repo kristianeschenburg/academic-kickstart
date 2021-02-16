@@ -31,7 +31,7 @@ projects: []
 
 In the next two posts, I want to talk briefly about an algorithm called Dynamic Mode Decomposition (DMD).  DMD is a spatiotemporal modal decomposition technique that can be used to identify spatial patterns in a signal (modes), along with the time course of these spatial patterns (dynamics).  As such, the algorithm assumes that the input data has a both a spatial and a temporal component.  We are interested in modeling *how* the system evolves over time.  
 
-If you'd like to find more information about DMD, {% cite schmid_dmd tu_dmd --file dmd %} are good references.  Likewise, if you'd like to follow along with the code for the following analysis, see [my repo](https://github.com/kristianeschenburg/dmd).  For a more in-depth analysis that applies DMD to brain activity in the resting brain, see this pre-print of a [paper](https://www.biorxiv.org/content/early/2018/06/08/343061) my colleagues and I wrote {% cite kunert_graf --file dmd %}, along with the [code](https://github.com/kunert/DMD_RSN) used for our analysis.
+If you'd like to find more information about DMD, Peter Schmid[^1] and Jonathan Tu[^2] have written excellent expositions on the topic.  Likewise, if you'd like to follow along with the code for the following analysis, see [my repo](https://github.com/kristianeschenburg/dmd).  For a more in-depth analysis that applies DMD to brain activity in the resting brain, see a recent publication by my colleagues and I[^3], along with the [code](https://github.com/kunert/DMD_RSN) used for our analysis.
 
 ## The DMD Algorithm
 
@@ -160,3 +160,9 @@ $$\begin{align}
 However, rather than explicitly computing the matrix $A$, DMD computes the eigenvectors and eigenvalues of $A$, by utilizing the **Singular Value Decomposition**, along with a **Similarity Transformation**, in order to generate a reduced-dimensional representation of $A$.
 
 This spectral decomposition of our linear operator is of particular importance, because it sheds light on the fact the DMD models the temporal dynamics of our system using a **Fourier basis**.  Each spatial mode is represented by a particular Fourier frequency along and growth-decay constant that determines the future behavior of our spatial mode.  Additionally, the Fourier basis also determines what sorts of time series can be modeled using DMD -- time series that are expected to have sinusoidal behavior will be more reliably modeled using DMD, whereas signals that show abrupt spike patterns might be more difficult to model.
+
+[^1]: P.J. Schmid. [Dynamic mode decomposition of numerical and experimental data](https://hal-polytechnique.archives-ouvertes.fr/file/index/docid/1020654/filename/DMS0022112010001217a.pdf). Journal of Fluid Mechanics 656.1. 2010.
+
+[^2]: Tu et al. [On Dynamic Mode Decomposition: Theory And Applications](http://cwrowley.princeton.edu/papers/Tu-DMD.pdf)
+
+[^3]: Kunert-Graf et al. [Extracting Reproducible Time-Resolved Resting State Networks Using Dynamic Mode Decomposition](https://www.frontiersin.org/articles/10.3389/fncom.2019.00075/full). Front. Comput. Neurosci. 2019.

@@ -40,3 +40,4 @@ Current models include the following:
   2. Graph Attention Network ([paper](https://arxiv.org/abs/1710.10903))
   3. Gaussian Kernel Graph Convolution Network ([paper](http://arxiv.org/abs/1803.10336))
   4. Constrained Graph Attention Network ([paper](https://arxiv.org/abs/1910.11945))
+  5. Jumping Knowledge Representation Learning ([paper](https://arxiv.org/pdf/1806.03536.pdf))
