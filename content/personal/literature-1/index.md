@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Literature"
+title: "Literature #1"
 subtitle: ""
 summary: ""
 authors: []
@@ -40,7 +40,7 @@ Recently read:
  * *Death with Interruptions* by Jose Saramago
     * I loved *Blindness*, but I didn't feel as invested in this one.  The concept was pretty unique, and I liked the parallel timelines devoted to Death herself, and to the crumbling of society as Death removes herself from business.
  * *The Overstory* by Richard Powers
-    * **Warning: spoler alert to follow...** Arguably one of the best books I've ever read.  Powers devotes 500 pages as a devotional to trees and the living biosphere as a whole, taking the point of view that the Earth will be fine, irrespective of climate change, but humans need Nature's help escaping and surviving ourselves.  Although the ending is up in the air, Patricia Westerford's character, a biologist who devotes her life to the study of forests (and who *has to be* an homage to Dr. Suzanne Simard at UBC, who first identified that forests communicate with one another through mycorrhizal networks in the soil) adopts the radical eco-activist mentality that the Earth will be better off without humans at all, and takes the extreme-solution of "unsuicide" -- decentering humans and putting the focus on the survival of nature.  This was a gut-wrencher, but one that has had a long-lasting effect on my perception of humanity's deep-rooted cognitive dissonance and selfishness.
+    * **Warning: spoiler alert to follow...** Arguably one of the best books I've ever read.  Powers devotes 500 pages as a devotional to trees and the living biosphere as a whole, taking the point of view that the Earth will be fine, irrespective of climate change, but humans need Nature's help escaping and surviving ourselves.  Although the ending is up in the air, Patricia Westerford's character, a biologist who devotes her life to the study of forests (and who *has to be* an homage to Dr. Suzanne Simard at UBC, who first identified that forests communicate with one another through mycorrhizal networks in the soil) adopts the radical eco-activist mentality that the Earth will be better off without humans at all, and takes the extreme-solution of "unsuicide" -- decentering humans and putting the focus on the survival of nature.  This was a gut-wrencher, but one that has had a long-lasting effect on my perception of humanity's deep-rooted cognitive dissonance and selfishness.
 
 Up next:
  * *A Woman Looking At Men Looking At Women: Essays on Art, Sex, and the Mind* by Siri Hustvedt
