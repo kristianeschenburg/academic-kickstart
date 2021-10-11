@@ -31,7 +31,7 @@ $$\begin{align}
 H(X) = - \sum_{x} p(x) \cdot log(p(x))
 \end{align}$$
 
-Entropy measures the degree of uncertainty in a probability distribution.  It is independent of the values $X$ takes, and is entirely dependent on the density of $X$.  We can think of entropy as measuring how "peaked" a distribution is. Assume we are given a binary random variables $Y$
+Entropy measures the degree of uncertainty in a probability distribution.  It is independent of the values $X$ takes, and is entirely dependent on the density of $X$.  We can think of entropy as measuring how "peaked" a distribution is. Assume we are given a binary random variable $Y$
 
 $$\begin{align}
 Y \sim Bernoulli(p) \\\\
@@ -51,7 +51,7 @@ If we compute $H(Y)$ as a function of $p$ and plot this result, we see the canon
 
 {{< figure src="entropy.png" title="" lightbox="true" >}}
 
-Immediately evident is that the entropy curve peaks when $p=0.5$.  We are entirely uncertain what value $Y$ will take if we have an equal chance of sampling either 0 or 1.  However, when $p = 0$ or $p=1$, we know exactly which value $y$ will take -- we aren't uncertain at all.
+Immediately evident is that the entropy curve peaks when $p=0.5$.  We are entirely uncertain what value $y$ will take if we have an equal chance of sampling either 0 or 1.  However, when $p = 0$ or $p=1$, we know exactly which value $y$ will take -- we aren't uncertain at all.
 
 Entropy is naturally related to the conditional entropy.  Given two variables $X$ and $Y$, conditional entropy is defined as
 
