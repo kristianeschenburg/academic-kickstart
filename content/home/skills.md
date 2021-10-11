@@ -38,7 +38,7 @@ subtitle = ""
   icon = "python"
   icon_pack = "fab"
   name = "Python"
-  description = "8 Years: I do most of my scientific computing development in Python."
+  description = "8 Years: I do most of my scientific computing development in Python. PyData stack, PyTorch/TensorFlow, OpenCV,"
 
 [[feature]]
   icon = "r-project"
