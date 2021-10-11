@@ -115,6 +115,8 @@ A \otimes B =
 
 such that $z_{i,j} = f(a_{i}, b_{j}$)
 
+{{< figure src="domain.png" title="" lightbox="true" >}}
+
 We define the mutual information between $Z$ and $C$ as 
 
 $$\begin{align}
