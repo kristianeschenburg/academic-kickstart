@@ -27,6 +27,8 @@ image:
 projects: []
 ---
 
+<meta name="thumbnail" content="featured.png">
+
 I'm interested in looking at some spatial mappings between pairs of cortical regions, and believe that these mappings are mediated, to some degree, by the temporal coupling between cortical areas.  I don't necessarily know the functional form of these mappings, but neurobiologically predict that these mappings are not random and have some inherent structure.  I want to examine the relationship between spatial location and strength of temporal coupling.  I'm going to use mutual information to measure this association.
 
 It's been a while since I've worked with information-based statistics, so I thought I'd review some proofs here.
