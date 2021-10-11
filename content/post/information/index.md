@@ -1,30 +1,21 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Entropy and Mutual Information"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
+tags: [probability, entropy, mutual information]
 categories: []
 date:   2021-10-08T15:24:17-07:00
 lastmod: 2021-10-08T15:24:17-07:00
 featured: false
 draft: false
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: ""
   focal_point: ""
   preview_only: false
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
 projects: []
 ---
 
@@ -58,9 +49,11 @@ Y =
 
 If we compute $H(Y)$ as a function of $p$ and plot this result, we see the canonical curve:
 
-Immediately evident is that the entropy curve peaks when $p=0.5$.  We are entirely uncertain what value $Y$ will take if we have an equal chance of sampling $y=1$ and $y=0$.  However, when $p = 0$ or $p=1$, we know exactly which value $y$ will take -- we aren't uncertain at all.
+{{< figure src="entropy.png" title="" lightbox="true" >}}
 
-Entropy is naturally related to the conditional entropy.  Given two variables $X$ and $Y$, we conditional entropy is defined as
+Immediately evident is that the entropy curve peaks when $p=0.5$.  We are entirely uncertain what value $Y$ will take if we have an equal chance of sampling either 0 or 1.  However, when $p = 0$ or $p=1$, we know exactly which value $y$ will take -- we aren't uncertain at all.
+
+Entropy is naturally related to the conditional entropy.  Given two variables $X$ and $Y$, conditional entropy is defined as
 
 $$\begin{align}
 H(Y|X) &= -\sum_{x}\sum_{y} = p(x,y)  \cdot log(\frac{p(x,y)}{p(x)}) \\\\
