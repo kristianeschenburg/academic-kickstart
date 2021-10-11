@@ -70,7 +70,7 @@ Related to entropy is the idea of mutual information.  Mutual information is a m
 The mutual information between $X$ and $Y$ is defined as:
 
 $$\begin{align}
-I(X,Y) &= \sum_{x}\sum_{y} p(x,y)log\Big(\frac{p(x,y)}{p(x) \cdot p(y)}\Big) \\\\
+I(X,Y) &= \sum_{x}\sum_{y} p(x,y) \cdot log\Big(\frac{p(x,y)}{p(x) \cdot p(y)}\Big) \\\\
 &= \sum_{x}\sum_{y}p(x,y) \cdot \log(p(x,y)) - \sum_{x}\sum_{y}p(x,y) \cdot log(p(x)) - \sum_{x}\sum_{y}p(x,y) \cdot log(p(y)) \\\\
 &= -H(X,Y) - \sum_{x}p(x) \cdot log(p(x)) - \sum_{y}p(y) \cdot log(p(y)) \\\\
 &= H(X) + H(Y) - H(X,Y)
@@ -79,7 +79,7 @@ I(X,Y) &= \sum_{x}\sum_{y} p(x,y)log\Big(\frac{p(x,y)}{p(x) \cdot p(y)}\Big) \\\
 $I(X,Y)$ is symmetric in $X$ and $Y$:
 
 $$\begin{align}
-I(X,Y) &= \sum_{x}\sum_{y} p(x,y)log\Big(\frac{p(x,y)}{p(x) \cdot p(y)}\Big) \\\\
+I(X,Y) &= \sum_{x}\sum_{y} p(x,y) \cdot log\Big(\frac{p(x,y)}{p(x) \cdot p(y)}\Big) \\\\
 &= \sum_{x}\sum_{y} p(x,y) \cdot log\Big(\frac{p(x|y)}{p(y)}\Big) \\\\
 &= \sum_{x}\sum_{y} p(x,y) \cdot log(p(x|y)) - \sum_{x}\sum_{y}p(x,y) \cdot log(p(x)) \\\\
 &= -H(X|Y) - \sum_{x}\sum_{y} p(x|y) \cdot p(y) \cdot log(p(x)) \\\\
