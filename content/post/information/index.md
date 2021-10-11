@@ -17,7 +17,7 @@ draft: false
 image:
   caption: ""
   focal_point: "Smart"
-  preview_only: no
+  preview_only: yes
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
